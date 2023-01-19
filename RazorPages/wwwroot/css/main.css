@@ -154,3 +154,22 @@ footer {
         grid-row: 2 / 5;
     }
 }
+
+img {
+    width: 100%;
+    max-width: 450px;
+}
+/* Front page */
+.about-section {
+    max-width: 80%;
+}
+
+.about-title {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.about-section > p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
