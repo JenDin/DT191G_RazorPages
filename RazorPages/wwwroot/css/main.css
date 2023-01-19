@@ -155,15 +155,39 @@ footer {
     }
 }
 
-img {
-    width: 100%;
-    max-width: 450px;
-}
-/* Front page */
+/* Shared styling for pages */
+.home-section,
 .about-section {
     max-width: 80%;
 }
 
+.about-section > p,
+.home-section > p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.home-title,
+.about-title {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Front page */
+.home-section {
+    padding: 1rem;
+}
+
+.home-title {
+    font-size: 2rem;
+}
+
+.home-section p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+/* About page */
 .about-title {
     font-size: 2.2rem;
     margin-bottom: 1rem;
@@ -172,4 +196,9 @@ img {
 .about-section > p {
     margin-bottom: 1rem;
     line-height: 1.8;
+}
+
+img {
+    width: 100%;
+    max-width: 450px;
 }
