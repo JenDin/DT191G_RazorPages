@@ -73,10 +73,6 @@ body {
     color: #fff;
 }
 
-main {
-    background: pink;
-}
-
 /* Main content */
 .container {
     width: 100vw;
@@ -161,11 +157,11 @@ footer {
     max-width: 80%;
 }
 
-.about-section > p,
-.home-section > p {
-    margin-bottom: 1rem;
-    line-height: 1.8;
-}
+    .about-section > p,
+    .home-section > p {
+        margin-bottom: 1rem;
+        line-height: 1.8;
+    }
 
 .home-title,
 .about-title {
@@ -186,6 +182,20 @@ footer {
     margin-bottom: 1rem;
     line-height: 1.8;
 }
+
+.bg-btn {
+    background: #468faf;
+    color: #fff;
+    border: 1px solid #000;
+    font-size: .9rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+    .bg-btn:hover {
+        background: #89c2d9;
+    }
 
 /* About page */
 .about-title {

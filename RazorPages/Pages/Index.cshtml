@@ -8,11 +8,22 @@
 
     <p>Denna webbplats har byggts med ASP.NET Core och Razor.</p>
 
+    <button id="bg-btn" class="bg-btn">Byt bakgrundsfärg</button>
+
     <div>
         <h2>Vad är ASP.NET Core?</h2>
         <p>ASP.NET Core är en nyare version och bearbetning av ASP.NET-ramverket utvecklat av Microsoft. Det utvecklas som öppen källkod och ASP.NET Core är plattformsoberoende vilket innebär att det fungerar på Windows, macOS, Linus och olika enheter. Detta skiljer sig från tidigare versioner av ASP.NET som endast var avsedda för Windows. Med detta ramverk kan utvecklare bygga avancerade molnbaserade webbapplikationer, IoT-appar och mobila backends.</p>
 
         <h2>Vad är Razor?</h2>
-        <p>Razor är ett märkspråk/en syntax som används för att kunna implementera server-kod till webbplatser. Vanligtvis används Razor i kombination med C# men det är även möjligt att använda med Visual Studio och F#. </p>
+        <p>Razor är ett märkspråk/en syntax som används för att kunna implementera server-kod till webbplatser. Vanligtvis används Razor i kombination med C# men det är även möjligt att använda med Visual Studio och F#.</p>
+
+        <p>Ett Razor-kod block kan se ut på följande sätt:</p>
+        <p>
+            @@{
+            string name = "Jenny";
+            }
+
+        <span>&lt;p&gt; Jag heter @@name &lt;/p&gt;</span>
+        </p>
     </div>
 </section>

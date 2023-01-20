@@ -1,5 +1,14 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿const bgBtn = document.querySelector("#bg-btn");
+const header = document.querySelector("#top-container");
+const footer = document.querySelector("#footer");
+const colors = ["#98c1d9", "#a8dadc", "#84a98c", "#b392ac", "#e2b4bd"];
 
-// Write your JavaScript code.
+bgBtn.addEventListener("click", randomizeBgColor);
 
+// Randomize background color on header and footer
+function randomizeBgColor() {
+    const random = Math.floor(Math.random() * colors.length);
+
+    header.style.background = colors[random];
+    footer.style.background = colors[random];
+};
