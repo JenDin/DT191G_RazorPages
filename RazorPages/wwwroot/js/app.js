@@ -1,5 +1,6 @@
 ﻿const bgBtn = document.querySelector("#bg-btn");
 const header = document.querySelector("#top-container");
+const menuContainer = document.querySelector("#menu-container");
 const footer = document.querySelector("#footer");
 const colors = ["#98c1d9", "#a8dadc", "#84a98c", "#b392ac", "#e2b4bd"];
 
@@ -10,5 +11,6 @@ function randomizeBgColor() {
     const random = Math.floor(Math.random() * colors.length);
 
     header.style.background = colors[random];
+    menuContainer.style.background = colors[random];
     footer.style.background = colors[random];
 };

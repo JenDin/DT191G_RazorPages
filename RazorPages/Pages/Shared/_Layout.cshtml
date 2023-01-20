@@ -22,12 +22,15 @@
     <main>
         <div class="container">
             <!-- Navigation -->
-            <div class="content-small">
-                <nav class="nav">
+            <div class="content-small" id="menu-container">
+                <nav class="nav" id="nav">
                     <ul class="nav-list">
-                        <li class="nav-item"><a asp-page="/Index">Start</a></li>
-                        <li class="nav-item"><a asp-page="/Razor">Razor</a></li>
-                        <li class="nav-item"><a asp-page="/About">Om sidan</a></li>
+                        @{
+                            var pageTitle = ViewData["title"];
+                        }
+                        <li class="nav-item @(pageTitle == "Hem" ? "active" : "")"><a asp-page="/Index">Start</a></li>
+                        <li class="nav-item @(pageTitle == "Razor" ? "active" : "")"><a asp-page="/Razor">Razor</a></li>
+                        <li class="nav-item @(pageTitle == "Om sidan" ? "active" : "")"><a asp-page="/About">Om sidan</a></li>
                     </ul>
                 </nav>
             </div>
