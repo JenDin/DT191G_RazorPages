@@ -9,7 +9,6 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 10rem;
     overflow-x: hidden;
-    /*    height: 100%;*/
 }
 
 body {
@@ -74,8 +73,6 @@ body {
 
 /* Main content */
 .container {
-/*    width: 100vw;
-    height: auto;*/
     display: grid;
     grid-template-columns: 300px 1fr;
     grid-template-rows: 1fr 1fr 100px;
